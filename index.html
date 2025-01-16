@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renewed Food - Renew. Refresh. Refill.</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      color: #333;
+      background-color: #f4f4f4;
+    }
+
+    /* Navbar Styling */
+    nav {
+      width: 100%;
+      background: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #4caf50;
+      text-transform: uppercase;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    nav ul li {
+      margin: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #333;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #4caf50;
+    }
+
+    nav .cta-button {
+      background: #4caf50;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav .cta-button:hover {
+      background: #45a049;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      background: #333; /* Dark gray background */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      letter-spacing: 2px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .hero p {
+      font-size: 1.8rem;
+      font-weight: 300;
+      color:white;
+    }
+
+    .hero a {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      background: #4caf50;
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 50px;
+      transition: background 0.3s;
+      text-transform: uppercase;
+    }
+
+    .hero a:hover {
+      background: #45a049;
+    }
+
+    /* Section Styling */
+    section {
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #4caf50;
+    }
+
+    section p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto 2rem;
+      color: #555;
+    }
+
+    /* Features Section */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .feature p{
+      text-align:left;
+    }
+
+    .feature {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center  ;
+    }
+
+    .feature h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    /* Inventors Section */
+    .inventors-boxes {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .inventor-box {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 3rem;
+      width: 400px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .inventor-box h3 {
+      font-size: 2rem;
+      color: #4caf50;
+      margin-bottom: 1rem;
+    }
+
+    .inventor-box p {
+      font-size: 1.2rem;
+      color: #555;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Renewed Food</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#inventors">Inventors</a></li>
+    </ul>
+    <a href="#signup" class="cta-button">Sign Up</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <h1>Renewed Food</h1>
+    <p>Renew. Refresh. Refill.</p>
+    <a href="#how-it-works">Discover More</a>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how-it-works">
+    <h2>How It Works</h2>
+    <p>Place your half-eaten food in the Renewed Food box, press the start button, and watch it regenerate into a fresh, complete item. Say goodbye to waste!</p>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features">
+    <h2>Features</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>Simplicity</h3>
+        <p>Turn any eaten food into a whole meal again. All it takes is one button.</p>
+      </div>
+      <div class="feature">
+        <h3>Empathy Mission</h3>
+        <p>Designed to reduce food waste and save the planet. Put world hunger to an end once and for all.</p>
+      </div>
+      <div class="feature">
+        <h3>Fundraiser</h3>
+        <p>Every 100 products bought, one will be donated to a town in need. Your support will help put an end to world hunger.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inventors Section -->
+  <section id="inventors">
+    <h2>Inventors</h2>
+    <div class="inventors-boxes">
+      <div class="inventor-box">
+        <h3>Adeline Vazquez</h3>
+        <p>Adeline Vazquez is a sophomore at Ontario Christian High School. She is the conceptual inventor and advertising agent for Renewed Food.</p>
+      </div>
+      <div class="inventor-box">
+        <h3>Chloe Konan</h3>
+        <p>Chloe Konan is a sophomore at Ontario Christian High School. She is the conceptual inventor and engineer for Renewed Food.</p>
+      </div>
+      <div class="inventor-box">
+        <h3>Monica Kim</h3>
+        <p>Monica Kim is a sophomore at Ontario Christian High school. She is the engineer and brand marketer of Renewed Food.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Renewed Food. All rights reserved.</p>
+  </footer>
+</body>
+</html>
