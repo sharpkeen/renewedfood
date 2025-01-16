@@ -79,8 +79,9 @@
 
     /* Hero Section */
     .hero {
-      height: 100vh;
-      background: #333; /* Dark gray background */
+      height: 120vh;
+      background: url('https://www.osfhealthcare.org/blog/wp-content/uploads/2019/08/apples-OG.jpg') no-repeat center center/cover;
+      position: relative;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -88,6 +89,22 @@
       text-align: center;
       color: white;
       padding: 2rem;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+      z-index: 1;
+    }
+
+    .hero h1, .hero p, .hero a {
+      position: relative;
+      z-index: 2;
     }
 
     .hero h1 {
@@ -123,20 +140,20 @@
 
     /* Section Styling */
     section {
-      padding: 5rem 2rem;
+      padding: 10rem 2rem; /* Increased padding for more separation */
       text-align: center;
     }
 
     section h2 {
       font-size: 2.5rem;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
       color: #4caf50;
     }
 
     section p {
       font-size: 1.2rem;
       max-width: 800px;
-      margin: 0 auto 2rem;
+      margin: 0 auto 4rem; /* Extra spacing for separation */
       color: #555;
     }
 
@@ -146,17 +163,13 @@
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 2rem;
     }
-    
-    .feature p{
-      text-align:left;
-    }
 
     .feature {
       background: white;
       padding: 2rem;
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      text-align: center  ;
+      text-align: left;
     }
 
     .feature h3 {
@@ -177,7 +190,7 @@
       background: white;
       border: 1px solid #ddd;
       border-radius: 10px;
-      padding: 3rem;
+      padding: 4rem; /* Larger boxes */
       width: 400px;
       text-align: center;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -193,12 +206,14 @@
       font-size: 1.2rem;
       color: #555;
     }
-
+    #how-it-works p{
+      font-size:1.3rem;
+    }
     /* Footer */
     footer {
       background: #333;
       color: white;
-      padding: 1rem;
+      padding: 2rem; /* Extra padding for better balance */
       text-align: center;
     }
   </style>
@@ -226,7 +241,7 @@
   <!-- How It Works -->
   <section id="how-it-works">
     <h2>How It Works</h2>
-    <p>Place your half-eaten food in the Renewed Food box, press the start button, and watch it regenerate into a fresh, complete item. Say goodbye to waste!</p>
+    <p>Place partially or even almost fully eaten food in the Renewed Food box, press the start button, and watch it regenerate into a fresh, complete item. Say goodbye to buying extra or bulk quantities! This new innovation also has upgrades coming soon such as Renew Food LASER where the size of your food does not need to be fixed, just point the laser and watch the magic happen. Coming soon also Calorie FREE Renewed Food. The renewed portion of food is no longer counts as calories. Eat freely with no guilt. Buy today!</p>
   </section>
 
   <!-- Features Section -->
@@ -234,38 +249,22 @@
     <h2>Features</h2>
     <div class="features">
       <div class="feature">
-        <h3>Simplicity</h3>
-        <p>Turn any eaten food into a whole meal again. All it takes is one button.</p>
+        <h3>Regenerate Food</h3>
+        <p>Turn any half-eaten food into a whole meal again.</p>
       </div>
       <div class="feature">
-        <h3>Empathy Mission</h3>
-        <p>Designed to reduce food waste and save the planet. Put world hunger to an end once and for all.</p>
+        <h3>Eco-Friendly</h3>
+        <p>Designed to reduce food waste and save the planet.</p>
       </div>
       <div class="feature">
-        <h3>Fundraiser</h3>
-        <p>Every 100 products bought, one will be donated to a town in need. Your support will help put an end to world hunger.</p>
+        <h3>One-Button Simplicity</h3>
+        <p>Simply press the start button. That's all it takes.</p>
       </div>
     </div>
   </section>
 
   <!-- Inventors Section -->
-  <section id="inventors">
-    <h2>Inventors</h2>
-    <div class="inventors-boxes">
-      <div class="inventor-box">
-        <h3>Adeline Vazquez</h3>
-        <p>Adeline Vazquez is a sophomore at Ontario Christian High School. She is the conceptual inventor and advertising agent for Renewed Food.</p>
-      </div>
-      <div class="inventor-box">
-        <h3>Chloe Konan</h3>
-        <p>Chloe Konan is a sophomore at Ontario Christian High School. She is the conceptual inventor and engineer for Renewed Food.</p>
-      </div>
-      <div class="inventor-box">
-        <h3>Monica Kim</h3>
-        <p>Monica Kim is a sophomore at Ontario Christian High school. She is the engineer and brand marketer of Renewed Food.</p>
-      </div>
-    </div>
-  </section>
+ <section id="inventors"> <h2>Inventors</h2> <div class="inventors-boxes"> <div class="inventor-box"> <h3>Adeline Vazquez</h3> <p>Adeline Vazquez is a sophomore at Ontario Christian High School. She is the conceptual inventor and advertising agent for Renewed Food.</p> </div> <div class="inventor-box"> <h3>Chloe Konan</h3> <p>Chloe Konan is a sophomore at Ontario Christian High School. She is the conceptual inventor and engineer for Renewed Food.</p> </div> <div class="inventor-box"> <h3>Monica Kim</h3> <p>Monica Kim is a sophomore at Ontario Christian High school. She is the engineer and brand marketer of Renewed Food.</p> </div> </div> </section>
 
   <!-- Footer -->
   <footer>
